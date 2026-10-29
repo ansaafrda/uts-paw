@@ -1,10 +1,98 @@
 [
-  {
+    {
     "id": "1",
-    "judul": "Contoh item pertama",
-    "kategori": "Contoh",
-    "fieldTema1": "ganti sesuai field tema",
-    "fieldTema2": 0,
-    "fieldTema3": "ganti sesuai field tema"
+    "judul": "Seblak",
+    "kategori": "Kudapan",
+    "daerahAsal": "Bandung, Jawa Barat",
+    "waktuMasak": 25,
+    "tingkatKesulitan": "mudah"
+  },
+  {
+    "id": "2",
+    "judul": "Papeda",
+    "kategori": "Makanan Utama",
+    "daerahAsal": "Papua dan Maluku",
+    "waktuMasak": 20,
+    "tingkatKesulitan": "sedang"
+  },
+  {
+    "id": "3",
+    "judul": "Seruit",
+    "kategori": "Sambal",
+    "daerahAsal": "Lampung",
+    "waktuMasak": 45,
+    "tingkatKesulitan": "sedang"
+  },
+  {
+    "id": "4",
+    "judul": "Rawon",
+    "kategori": "Makanan Utama",
+    "daerahAsal": "Jawa Timur",
+    "waktuMasak": 120,
+    "tingkatKesulitan": "sedang"
+  },
+  {
+    "id": "5",
+    "judul": "Sagu Lempeng",
+    "kategori": "Kudapan",
+    "daerahAsal": "Maluku",
+    "waktuMasak": 30,
+    "tingkatKesulitan": "sedang"
+  },
+  {
+    "id": "6",
+    "judul": "Ayam Woku",
+    "kategori": "Makanan Utama",
+    "daerahAsal": "Manado, Sulawesi Utara",
+    "waktuMasak": 60,
+    "tingkatKesulitan": "sedang"
+  },
+  {
+    "id": "7",
+    "judul": "Kopi Dabe",
+    "kategori": "Minuman",
+    "daerahAsal": "Tidore, Maluku Utara",
+    "waktuMasak": 15,
+    "tingkatKesulitan": "mudah"
+  },
+  {
+    "id": "8",
+    "judul": "Jus Martabe",
+    "kategori": "Minuman",
+    "daerahAsal": "Medan, Sumatera Utara",
+    "waktuMasak": 10,
+    "tingkatKesulitan": "mudah"
+  },
+  {
+    "id": "9",
+    "judul": "Bika Ambon",
+    "kategori": "Kudapan",
+    "daerahAsal": "Medan, Sumatera Utara",
+    "waktuMasak": 120,
+    "tingkatKesulitan": "sulit"
+  },
+  {
+    "id": "10",
+    "judul": "Pempek",
+    "kategori": "Kudapan",
+    "daerahAsal": "Palembang, Sumatera Selatan",
+    "waktuMasak": 75,
+    "tingkatKesulitan": "sedang"
+  },
+  {
+    "id": "11",
+    "judul": "Burgo",
+    "kategori": "Makanan Utama",
+    "daerahAsal": "Palembang, Sumatera Selatan",
+    "waktuMasak": 45,
+    "tingkatKesulitan": "sedang"
+  },
+  {
+    "id": "12",
+    "judul": "Sambal Terasi",
+    "kategori": "Sambal",
+    "daerahAsal": "Nusantara (khas Jawa)",
+    "waktuMasak": 15,
+    "tingkatKesulitan": "mudah"
   }
 ]
