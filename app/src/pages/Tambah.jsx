@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import useKoleksi from '../hooks/useKoleksi.js'
 import './Tambah.css'
 
-const AWAL = { judul: '', kategori: 'Kuliah', tenggat: '', prioritas: 'sedang' }
+const AWAL = { judul: '', kategori: 'Makanan', daerahAsal: '', waktuMasak: '', tingkatKesulitan: 'sedang' }
 
 export default function Tambah() {
   const { tambah } = useKoleksi()
@@ -33,16 +33,21 @@ export default function Tambah() {
 
       <label htmlFor="kategori">Kategori</label>
       <select id="kategori" name="kategori" value={form.kategori} onChange={ubah}>
-        <option>Kuliah</option>
-        <option>Organisasi</option>
+        <option>Makanan</option>
+        <option>Minuman</option>
+        <option>Kudapan</option>
+        <option>Sambal</option>
       </select>
 
-      <label htmlFor="tenggat">Tenggat</label>
-      <input id="tenggat" name="tenggat" type="date" value={form.tenggat} onChange={ubah} />
+      <label htmlFor="daerahAsal">Daerah Asal</label>
+      <input id="daerahAsal" name="daerahAsal" value={form.daerahAsal} onChange={ubah} />
 
-      <label htmlFor="prioritas">Prioritas</label>
-      <select id="prioritas" name="prioritas" value={form.prioritas} onChange={ubah}>
-        <option value="rendah">Rendah</option>
+      <label htmlFor="waktuMasak">Waktu Masak</label>
+      <input id="waktuMasak" name="waktuMasak" value={form.waktuMasak} onChange={ubah} />
+
+      <label htmlFor="tingkatKesulitan">Tingkat Kesulitan</label>
+      <select id="tingkatKesulitan" name="tingkatKesulitan" value={form.tingkatKesulitan} onChange={ubah}>
+        <option value="mudah">Mudah</option>
         <option value="sedang">Sedang</option>
         <option value="tinggi">Tinggi</option>
       </select>
