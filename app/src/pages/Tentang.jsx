@@ -1,5 +1,5 @@
 import mahasiswa from '../../mahasiswa.json'
-import './tentang.css'
+import './Tentang.css'
 
 // Ganti dengan alamat repo fork kamu.
 const REPO = 'https://github.com/ansaafrda/uts-paw'

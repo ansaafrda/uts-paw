@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './tidakDitemukan.css'
+import './TidakDitemukan.css'
 
 export default function TidakDitemukan() {
   return (
