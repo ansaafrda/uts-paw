@@ -8,7 +8,7 @@ export default function Beranda() {
   const jumlahKategori = new Set(items.map((item) => item.kategori)).size
 
   return (
-    <section>
+    <section id="beranda">
       <h1>Resep Masakan Nusantara</h1>
       <p>Tema: {mahasiswa.tema}</p>
       {loading ? (
@@ -18,7 +18,7 @@ export default function Beranda() {
           Ada {items.length} resep dalam {jumlahKategori} jenis hidangan.
         </p>
       )}
-      <Link to="/koleksi">Lihat semua resep</Link>
+      <Link to="/koleksi" id="tombol-koleksi">Lihat semua resep</Link>
     </section>
   )
 }
