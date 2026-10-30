@@ -1,0 +1,69 @@
+#laman-koleksi > h1 {
+  margin: 0 0 1.5rem;
+  color: var(--warna-ungu-gelap);
+  font-family: Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -0.03em;
+}
+
+.alat-koleksi {
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+#alat-koleksi input,
+#alat-koleksi select {
+  min-height: 46px;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--warna-ungu-border);
+  border-radius: 14px;
+  background: var(--warna-permukaan);
+  color: var(--warna-teks);
+  font: inherit;
+  outline: none;
+}
+
+#alat-koleksi input {
+  flex: 1 1 240px;
+}
+
+#alat-koleksi input:focus,
+#alat-koleksi select:focus {
+  border-color: var(--warna-ungu);
+  box-shadow: 0 0 0 3px rgb(121 87 166 / 15%);
+}
+
+#daftar-kartu {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 1rem;
+}
+
+.kartu {
+  min-height: 120px;
+  padding: 1.25rem;
+  border: 1px solid var(--warna-ungu-border);
+  border-radius: 20px;
+  background: var(--warna-permukaan);
+  box-shadow: var(--bayangan-ungu);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.kartu:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgb(57 38 79 / 11%);
+}
+
+.kartu h3 a {
+  color: var(--warna-ungu-gelap);
+  text-decoration: none;
+}
+
+.kartu h3 a:hover {
+  color: var(--warna-ungu-hover);
+}
+
+.kartu p {
+  color: var(--warna-teks-lembut);
+  font-size: 0.95rem;
+}

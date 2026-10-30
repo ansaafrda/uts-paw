@@ -2,25 +2,63 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: var(--warna-teks);
 }
 
 .kepala {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  gap: 1.5rem;
+  padding: 0.9rem clamp(1rem, 4vw, 2.5rem);
+  border-bottom: 1px solid var(--warna-ungu-border);
+  background: rgb(250 247 255 / 94%);
+  box-shadow: 0 6px 24px rgb(75 48 105 / 7%);
+  backdrop-filter: blur(14px);
+}
+
+.kepala strong {
+  color: var(--warna-ungu-gelap);
+  font-family: Georgia, serif;
+  font-size: 1.65rem;
+  letter-spacing: -0.05em;
 }
 
 .menu {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.menu a {
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+  color: var(--warna-teks-lembut);
+  font-size: 0.94rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 160ms ease, background 160ms ease, transform 160ms ease;
+}
+
+.menu a:hover {
+  transform: translateY(-1px);
+  background: var(--warna-ungu-muda);
+  color: var(--warna-ungu-hover);
 }
 
 .menu a.active {
-  font-weight: 600;
+  background: var(--warna-ungu);
+  color: #fffaff;
 }
 
 .isi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   flex: 1;
   width: 100%;
   max-width: 960px;
@@ -28,10 +66,16 @@
   padding: 1.5rem;
 }
 
+.isi > section,
+.isi > form {
+  width: 100%;
+  margin-inline: auto;
+}
+
 .kaki {
   padding: 1rem 1.5rem;
-  border-top: 1px solid #dcdcdc;
-  color: #57606a;
+  border-top: 1px solid var(--warna-ungu-border);
+  color: var(--warna-teks-lembut);
   font-size: 0.9rem;
 }
 
@@ -64,8 +108,10 @@
 
 .kartu {
   padding: 1rem;
-  border: 1px solid #dcdcdc;
-  border-radius: 8px;
+  border: 1px solid var(--warna-ungu-border);
+  border-radius: 16px;
+  background: var(--warna-permukaan);
+  box-shadow: var(--bayangan-ungu);
 }
 
 .kartu h3 {
@@ -75,7 +121,7 @@
 
 .kartu p {
   margin: 0;
-  color: #57606a;
+  color: var(--warna-teks-lembut);
 }
 
 .alat-koleksi {
@@ -88,15 +134,28 @@
 .alat-koleksi input,
 .alat-koleksi select {
   padding: 0.5rem 0.75rem;
-  border: 1px solid #c4c4c4;
-  border-radius: 6px;
+  border: 1px solid var(--warna-ungu-border);
+  border-radius: 10px;
+  background: var(--warna-permukaan);
+  color: var(--warna-teks);
   font: inherit;
 }
 
 @media (max-width: 768px) {
   .kepala {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.65rem;
+    padding: 0.85rem 1rem;
+  }
+
+  .menu {
+    justify-content: center;
+    gap: 0.2rem;
+  }
+
+  .menu a {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.88rem;
   }
 
   .daftar-kartu {

@@ -1,0 +1,39 @@
+main.isi > section:has(> a[href="/koleksi"]) {
+  padding: clamp(2rem, 7vw, 5rem);
+  border: 1px solid var(--warna-ungu-border);
+  border-radius: 28px;
+  background: linear-gradient(135deg, #fcfaff 0%, #eee5f8 100%);
+  box-shadow: var(--bayangan-ungu);
+}
+
+main.isi > section:has(> a[href="/koleksi"]) h1 {
+  max-width: 620px;
+  margin: 0 0 1rem;
+  color: var(--warna-ungu-gelap);
+  font-family: Georgia, serif;
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+main.isi > section:has(> a[href="/koleksi"]) p {
+  color: var(--warna-teks-lembut);
+  font-size: 1.05rem;
+}
+
+main.isi > section:has(> a[href="/koleksi"]) a {
+  display: inline-flex;
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  background: var(--warna-ungu);
+  color: #fffaff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+main.isi > section:has(> a[href="/koleksi"]) a:hover {
+  transform: translateY(-2px);
+  background: var(--warna-ungu-hover);
+}

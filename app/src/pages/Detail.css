@@ -1,0 +1,78 @@
+main.isi > section:has(> .aksi) {
+  max-width: 720px;
+  padding: clamp(1.5rem, 5vw, 3rem);
+  border: 1px solid var(--warna-ungu-border);
+  border-radius: 24px;
+  background: var(--warna-permukaan);
+  box-shadow: var(--bayangan-ungu);
+}
+
+main.isi > section:has(> .aksi) h1 {
+  margin: 0 0 1.5rem;
+  color: var(--warna-ungu-gelap);
+  font-family: Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.1;
+}
+
+main.isi > section:has(> .aksi) dl {
+  grid-template-columns: minmax(130px, 0.4fr) 1fr;
+  gap: 0.8rem 1.25rem;
+  margin: 0;
+}
+
+main.isi > section:has(> .aksi) dt {
+  color: var(--warna-teks-lembut);
+  font-weight: 500;
+}
+
+main.isi > section:has(> .aksi) dd {
+  color: var(--warna-teks);
+  font-weight: 600;
+}
+
+main.isi > section:has(> .aksi) .aksi {
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+main.isi > section:has(> .aksi) .aksi button,
+main.isi > section:has(> .aksi) .aksi a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.65rem 1.1rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--warna-ungu);
+  color: #fffaff;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main.isi > section:has(> .aksi) .aksi button {
+  background: #f2eafa;
+  color: #704d91;
+}
+
+main.isi > section:has(> .aksi) .aksi button:hover {
+  background: #e7daf5;
+}
+
+main.isi > section:has(> .aksi) .aksi a:hover {
+  background: var(--warna-ungu-hover);
+}
+
+@media (max-width: 520px) {
+  main.isi > section:has(> .aksi) dl {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  main.isi > section:has(> .aksi) dd {
+    margin-bottom: 0.8rem;
+  }
+}

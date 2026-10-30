@@ -4,7 +4,7 @@ import './Layout.css'
 const MENU = [
   { ke: '/', label: 'Home' },
   { ke: '/koleksi', label: 'Kumpulan Resep' },
-  { ke: '/tambah', label: 'Tambah' },
+  { ke: '/tambah', label: 'Tambah Resep' },
   { ke: '/statistik', label: 'Statistik' },
   { ke: '/tentang', label: 'Tentang' },
 ]
