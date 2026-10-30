@@ -1,0 +1,53 @@
+main.isi > section:has(> dl):not(:has(> .aksi)) {
+  max-width: 720px;
+  padding: clamp(1.5rem, 5vw, 3rem);
+  border: 1px solid var(--warna-ungu-border);
+  border-radius: 24px;
+  background: var(--warna-permukaan);
+  box-shadow: var(--bayangan-ungu);
+}
+
+main.isi > section:has(> dl):not(:has(> .aksi)) h1 {
+  margin: 0 0 1.5rem;
+  color: var(--warna-ungu-gelap);
+  font-family: Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+main.isi > section:has(> dl):not(:has(> .aksi)) dl {
+  grid-template-columns: minmax(100px, 0.35fr) 1fr;
+  gap: 0.8rem 1.25rem;
+  margin: 0;
+}
+
+main.isi > section:has(> dl):not(:has(> .aksi)) dt {
+  color: var(--warna-teks-lembut);
+  font-weight: 500;
+}
+
+main.isi > section:has(> dl):not(:has(> .aksi)) dd {
+  color: var(--warna-teks);
+  font-weight: 600;
+}
+
+main.isi > section:has(> dl):not(:has(> .aksi)) p {
+  margin: 1.75rem 0 0;
+  color: var(--warna-teks-lembut);
+}
+
+main.isi > section:has(> dl):not(:has(> .aksi)) a {
+  color: var(--warna-ungu-hover);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 520px) {
+  main.isi > section:has(> dl):not(:has(> .aksi)) dl {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  main.isi > section:has(> dl):not(:has(> .aksi)) dd {
+    margin-bottom: 0.8rem;
+  }
+}

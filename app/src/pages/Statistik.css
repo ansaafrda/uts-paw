@@ -1,26 +1,51 @@
 .tabel-gulir {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   overflow-x: auto;
+  border: 1px solid var(--warna-ungu-border);
+  border-radius: 18px;
+  background: var(--warna-permukaan);
+  box-shadow: var(--bayangan-ungu);
 }
 
 .tabel-data {
   width: 100%;
-  max-width: 480px;
+  max-width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
+}
+
+.tabel-data th:first-child,
+.tabel-data td:first-child {
+  width: 75%;
+}
+
+.tabel-data th:last-child,
+.tabel-data td:last-child {
+  width: 25%;
 }
 
 .tabel-data th,
 .tabel-data td {
-  padding: 0.5rem 0.75rem;
-  border-bottom: 1px solid #dcdcdc;
+  padding: 0.9rem 1.1rem;
+  border-bottom: 1px solid #eee7f5;
   text-align: left;
+  overflow-wrap: anywhere;
 }
 
 .tabel-data thead th {
-  background: #f1f1f1;
+  background: #f0e8fa;
+  color: var(--warna-ungu-gelap);
+  font-weight: 700;
 }
 
 .tabel-data tbody tr:nth-child(even) {
-  background: #fafafa;
+  background: #faf7fe;
+}
+
+.tabel-data tbody tr:hover {
+  background: #f2ebfa;
 }
 
 .tabel-data td:last-child,
@@ -30,13 +55,15 @@
 
 .tabel-data tfoot th,
 .tabel-data tfoot td {
-  border-top: 2px solid #1f2328;
-  font-weight: 600;
+  border-top: 2px solid #d7c7e9;
+  border-bottom: 0;
+  color: var(--warna-ungu-gelap);
+  font-weight: 700;
 }
 
 @media (max-width: 480px) {
   .tabel-data th,
   .tabel-data td {
-    padding: 0.4rem 0.5rem;
+    padding: 0.75rem;
   }
 }

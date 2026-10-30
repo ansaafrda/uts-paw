@@ -1,12 +1,36 @@
+@import './pages/Beranda.css';
+@import './pages/Detail.css';
+@import './pages/Koleksi.css';
+@import './pages/Tentang.css';
+@import './pages/TidakDitemukan.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.5;
-  color: #1f2328;
-  background: #f6f7f9;
+  color: #3e3448;
+  background: #f7f3fc;
+  --warna-latar: #f7f3fc;
+  --warna-permukaan: #fdfbff;
+  --warna-permukaan-lembut: #f5effb;
+  --warna-ungu-muda: #f0e8fa;
+  --warna-ungu-border: #e8def1;
+  --warna-ungu: #7957a6;
+  --warna-ungu-hover: #65448d;
+  --warna-ungu-gelap: #50366f;
+  --warna-teks: #3e3448;
+  --warna-teks-lembut: #766d82;
+  --bayangan-ungu: 0 12px 34px rgb(57 38 79 / 7%);
 }
 
 body {
   margin: 0;
+  background: var(--warna-latar);
 }
 
 main {

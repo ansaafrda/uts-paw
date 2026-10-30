@@ -1,42 +1,79 @@
 .formulir {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
   max-width: 480px;
+  gap: 0.5rem;
+  padding: clamp(1.25rem, 5vw, 2.5rem);
+  border: 1px solid var(--warna-ungu-border);
+  border-radius: 24px;
+  background: var(--warna-permukaan);
+  box-shadow: var(--bayangan-ungu);
+}
+
+.formulir h1 {
+  margin: 0 0 1rem;
+  color: var(--warna-ungu-gelap);
+  font-family: Georgia, serif;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  letter-spacing: -0.03em;
 }
 
 .formulir label {
   margin-top: 0.75rem;
+  color: #51465f;
+  font-size: 0.95rem;
   font-weight: 600;
 }
 
 .formulir input,
 .formulir select {
-  padding: 0.5rem 0.75rem;
-  border: 1px solid #c4c4c4;
-  border-radius: 6px;
+  min-height: 46px;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--warna-ungu-border);
+  border-radius: 12px;
+  background: #fff;
+  color: var(--warna-teks);
   font: inherit;
+  outline: none;
+}
+
+.formulir input:focus,
+.formulir select:focus {
+  border-color: var(--warna-ungu);
+  box-shadow: 0 0 0 3px rgb(121 87 166 / 15%);
 }
 
 .formulir [role='alert'] {
-  margin: 0;
-  color: #b42318;
+  margin: 0.2rem 0 0;
+  color: #a33d55;
   font-size: 0.9rem;
 }
 
 .formulir button {
   align-self: flex-start;
+  min-height: 46px;
   margin-top: 1rem;
-  padding: 0.6rem 1.5rem;
+  padding: 0.7rem 1.4rem;
   border: 0;
-  border-radius: 6px;
-  background: #1f2328;
-  color: #fff;
+  border-radius: 999px;
+  background: var(--warna-ungu);
+  color: #fffaff;
   font: inherit;
+  font-weight: 700;
   cursor: pointer;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.formulir button:hover {
+  transform: translateY(-1px);
+  background: var(--warna-ungu-hover);
 }
 
 @media (max-width: 480px) {
+  .formulir {
+    padding: 1.25rem;
+  }
+
   .formulir button {
     align-self: stretch;
   }
