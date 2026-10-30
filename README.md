@@ -25,8 +25,6 @@ npm run dev
 
 ## Konsep React yang dipakai
 
-## Konsep React yang dipakai
-
 - *Komponen fungsional dan JSX*: aplikasi dibagi menjadi komponen seperti Layout, Beranda, Koleksi, dan KartuItem.
 - *Props dan aliran data satu arah*: KartuItem menerima data lewat prop item; KotakPencarian menerima nilai pencarian dan fungsi onUbah sebagai callback ke komponen induk.
 - *State dengan useState*: menyimpan nilai pencarian, kategori yang dipilih, isi form, dan pesan validasi.
